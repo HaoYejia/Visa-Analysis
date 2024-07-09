@@ -276,9 +276,10 @@ class AnalyzeLCA():
 
         
         if (self.analyzedVisaType == "H-1B") & (self.analyzedVisaStatus == "Certified"):
-            generator = GenerateLCAReport(self.combinedEmployerData, self.analyzedVisaType, self.analyzedVisaStatus, self.majorName)
-            generator.generateEmployerGeneralDataFrame()
-            generator.generateYearEmployerGeneralTable(2021)
+            generator = GenerateLCAReport(self.combinedEmployerData, self.analyzedVisaType, self.analyzedVisaStatus, self.majorName, 5)
+            generator.generateYearEmployerGeneralTable(range(self.startYear, self.endYear+1))
+            generator.generateEmployerDetailedPages()
+            generator.export()
 
 
 
