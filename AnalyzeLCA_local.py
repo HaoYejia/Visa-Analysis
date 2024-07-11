@@ -272,11 +272,9 @@ class AnalyzeLCA():
                     self.majorName + "_" + "employer_combined_result").lower().replace(
             "-", "_")
         
-        employerPDF = fpdf.FPDF()
-
         
         if (self.analyzedVisaType == "H-1B") & (self.analyzedVisaStatus == "Certified"):
-            generator = GenerateLCAReport(self.combinedEmployerData, self.analyzedVisaType, self.analyzedVisaStatus, self.majorName, 5)
+            generator = GenerateLCAReport(self.combinedEmployerData, self.analyzedVisaType, self.analyzedVisaStatus, self.majorName, 5, self.startYear, self.endYear)
             generator.generateYearEmployerGeneralTable(range(self.startYear, self.endYear+1))
             generator.generateEmployerDetailedPages()
             generator.export()
