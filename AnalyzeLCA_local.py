@@ -1,4 +1,4 @@
-# This is a sample Python script.
+
 import os
 import re
 import math
@@ -29,9 +29,6 @@ class AnalyzeLCA():
         #self.DBworkPath = str(pathlib.Path().absolute())
 
         self.inputRawDataDBConfig = {
-            'user': 'root',
-            'password': '8LtM1zFleE9wIlMJ1F5M',
-            'host': '10.47.240.3',
             'database': 'lca_raw_data',
         }
 
@@ -40,16 +37,10 @@ class AnalyzeLCA():
 
         # self.inputDBEngine.connect().execute(sqlalchemy.text(""))
         self.outputEmployerDataDBConfig = {
-            'user': 'root',
-            'password': '8LtM1zFleE9wIlMJ1F5M',
-            'host': '10.47.240.3',
             'database': 'lca_quarterly_analyzed_employer_data',
         }
 
         self.outputLocationDataDBConfig = {
-            'user': 'root',
-            'password': '8LtM1zFleE9wIlMJ1F5M',
-            'host': '10.47.240.3',
             'database': 'lca_quarterly_analyzed_location_data',
         }
 
@@ -65,9 +56,6 @@ class AnalyzeLCA():
         self.endYear = 2023  # Inclusive
 
         self.outputResultDataDBConfig = {
-            'user': 'root',
-            'password': '8LtM1zFleE9wIlMJ1F5M',
-            'host': '10.47.240.3',
             'database': 'lca_result',
         }
 
@@ -81,7 +69,6 @@ class AnalyzeLCA():
         tableNames = sqlalchemy.inspect(self.inputDBEngine).get_table_names()
         lcaTables = [table for table in tableNames if table.startswith("lca_disclosure_data")]
 
-        # joblib.Parallel(n_jobs=multiprocessing.cpu_count(),prefer="threads")(joblib.delayed(self.analyzeQuarterLCAHelper)(table) for table in lcaTables)
         for table in lcaTables:
             analysis = AnalyzeQuarterLCA(inputTableName = table,
                                         majorName = self.majorName, 
@@ -90,15 +77,8 @@ class AnalyzeLCA():
                                         VisaStatus = self.analyzedVisaStatus, 
                                         DBPath = self.DBworkPath)
             analysis.cleanData()
-            #analysis.generateReports()
             analysis.generateBIReport()
 
-    '''
-    def analyzeQuarterLCAHelper(self, table):
-        analysis = AnalyzeQuarterLCA(table)
-        analysis.cleanData()
-        analysis.generateReports()
-    '''
 
     def combineResults(self):
         employerTables = sqlalchemy.inspect(self.outputEmployerDataDBEngine).get_table_names()
@@ -297,16 +277,9 @@ class AnalyzeLCA():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # path = "../GovData/"
-    # print(os.listdir(path))
-
-    # myReadLCA = AnalyzeQuarterLCA()
-
-    # myReadLCA.cleanData()
-    # myReadLCA.generateReports()
 
     myReadLCA = AnalyzeLCA()
-    #myReadLCA.analyzeQuarterLCA()
+    myReadLCA.analyzeQuarterLCA()
     #myReadLCA.combineResults()
     myReadLCA.combineBIResults()
     myReadLCA.generatePDFReport()

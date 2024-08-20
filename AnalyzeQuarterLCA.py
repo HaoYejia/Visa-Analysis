@@ -82,11 +82,75 @@ class AnalyzeQuarterLCA():
 
         # Mapping table for redundant employer names
         self.identicalEmployerName = {
-
+            "ABB" : "ABB",
+            "ABB ENTERPRISE SOFTWARE" : "ABB",
+            "ABB ENTERPRISE SOFTWARE  (AN ABB COMPANY)" : "ABB",
+            "ALSTOM SIGNALING" : "ALSTOM",
+            "ALSTOM GRID" : "ALSTOM",
+            "ALSTOM TRANSPORTATION" : "ALSTOM",
+            "AMAZON DATA SERVICES" : "AMAZON",
+            "AMAZONCOM SERVICES" : "AMAZON",
+            "ATRONIX ACQUISITION CORP" : "ATRONIX ACQUISITION CORP",
+            "ATRONIX ACQUISITION CORPORATION" : "ATRONIX ACQUISITION CORP",
+            "BORGWARNER PDS (ANDERSON)" : "BORGWARNER",
+            "BORGWARNER PDS (USA)" : "BORGWARNER",
+            "BORGWARNER TECHNOLOGIES SERVICES" : "BORGWARNER",
+            "BURNS & MCDONNELL ENGINEERING COMPANY" : "BURNS & MCDONNELL",
+            "BURNS & MCDONNELL WESTERN ENTERPRISES" : "BURNS & MCDONNELL",
+            "CANOO TECHNOLOGIES" : "CANOO",
+            "CANOO" : "CANOO",
+            "CIRRUS LOGIC INTERNATIONAL SEMICONDUCTOR LTD" : "CIRRUS LOGIC",
+            "CUMMINS EMISSION SOLUTIONS" : "CUMMINS",
+            "DEERE AND COMPANY" : "DEERE & COMPANY",
+            "DISH WIRELESS LLC" : "DISH WIRELESS",
+            "FACEBOOK" : "META",
+            "GE ENERGY MANAGEMENT SERVICES" : "GENERAL ELECTRIC",
+            "GE GRID SOLUTIONS" : "GENERAL ELECTRIC",
+            "GE PRECISION HEALTHCARE" : "GENERAL ELECTRIC",
+            "GE RENEWABLES GRID" : "GENERAL ELECTRIC",
+            "GENERAL ELECTRIC COMPANY" : "GENERAL ELECTRIC",
+            "GENERAL ELECTRIC COMPANY (GE GLOBAL RESEARCH CENTER)" : "GENERAL ELECTRIC",
+            "HCL AMERICA SOLUTIONS": "HCL AMERICA",
+            "INFINEON TECHNOLOGIES AMERICAS CORP" : "INFINEON TECHNOLOGIES",
+            "INTEL AMERICAS" : "INTEL",
+            "INTEL CORPORATION" : "INTEL",
+            "INTEL FEDERAL" : "INTEL",
+            "INTEL MASSACHUSETTS" : "INTEL",
+            "INTEL NDTM US" : "INTEL",
+            "L&T TECHNOLOGY SERVICES LIMITED" : "L&T TECHNOLOGY SERVICES",
+            "MICRON TECHNOLOGY UTAH" : "MICRON TECHNOLOGY",
+            "MOTOROLA SOLUTIONS" : "MOTOROLA",
+            "MOTOROLA MOBILITY" : "MOTOROLA",
+            "MOTT MACDONALD GROUP" : "MOTT MACDONALD",
+            "QUALCOMM ATHEROS" : "QUALCOMM",
+            "QUALCOMM INNOVATION CENTER" : "QUALCOMM",
+            "QUALCOMM ORPORATED" : "QUALCOMM",
+            "QUALCOMM TECHNOLOGIES" : "QUALCOMM",
+            "RENESAS DESIGN NORTH AMERICA" : "RENESAS ELECTRONICS",
+            "RENESAS ELECTRONICS AMERICA" : "RENESAS ELECTRONICS",
+            "RIVIAN AUTOMOTIVE" : "RIVIAN",
+            "SAMSUNG SEMICONDUCTOR" : "SAMSUNG",
+            "SAMSUNG AUSTIN SEMICONDUCTOR" : "SAMSUNG",
+            "SAMSUNG AUSTIN SEMICONDUCTOR LLC" : "SAMSUNG",
+            "SAMSUNG ELECTRONICS AMERICA" : "SAMSUNG",
+            "SAMSUNG RESEARCH AMERICA" : "SAMSUNG",
+            "SAMSUNG SEMICONDUCTOR" : "SAMSUNG",
+            "SCHNEIDER ELECTRIC ENGINEERING SERVICES" : "SCHNEIDER ELECTRIC",
+            "SCHNEIDER ELECTRIC IT CORPORATION" : "SCHNEIDER ELECTRIC",
+            "SCHNEIDER ELECTRIC USA" : "SCHNEIDER ELECTRIC",
+            "SIEMENS ENERGY" : "SIEMENS",
+            "SIEMENS INDUSTRY" : "SIEMENS",
+            "SIEMENS INDUSTRY SOFTWARE" : "SIEMENS",
+            "SIEMENS MEDICAL SOLUTIONS USA" : "SIEMENS",
+            "SIEMENS MOBILITY" : "SIEMENS",
+            "SK HYNIX MEMORY SOLUTIONS AMERICA" : "SK HYNIX",
+            "SK HYNIX NAND PRODUCT SOLUTIONS CORP" : "SK HYNIX",
+            "TEK LABS" : "TEKLABS",
+            "ZF PASSIVE SAFETY SYSTEMS US" : "ZF",
+            "ZF NORTH AMERICA" : "ZF"
         }
 
-        # Raw, unprocessed dataframe
-        # self.rawDataFrame = pandas.DataFrame(columns=self.essentialCol)
+        
 
         self.inputDBEngine = sqlalchemy.create_engine(
             "sqlite:///" + self.DBworkPath + self.inputRawDataDBConfig['database'] + ".db")
@@ -98,7 +162,8 @@ class AnalyzeQuarterLCA():
         self.outputLocationDataDBEngine = sqlalchemy.create_engine(
             "sqlite:///" + self.DBworkPath + self.outputLocationDataDBConfig[
                 'database'] + ".db")
-
+        
+        # Raw, unprocessed dataframe
         self.rawDataFrame = pandas.read_sql("SELECT * FROM " + self.inputTableName, self.inputDBEngine)
 
         self.cleanedDataFrame = pandas.DataFrame()
@@ -131,6 +196,18 @@ class AnalyzeQuarterLCA():
         print(queryString)
 
         return queryString
+    
+    def cleanEmployerName(self, name : str):
+        result = name
+        # Merge similar employer names to same name by removing ",", ",", "INC", "LLC" and put every name in upper case
+        result = result.upper()
+        result = re.sub('[.,]|INC|LLC|LLP|LP|^\s+|\s+$|\s+(?=\s)', "", result)
+        result = result.rstrip()
+
+        if result in self.identicalEmployerName:
+            result = self.identicalEmployerName[result]
+
+        return result
 
     def cleanData(self):
         # Extract only the essential columns
@@ -161,9 +238,10 @@ class AnalyzeQuarterLCA():
             '[$,]', '', regex=True)
 
         # Merge similar employer names to same name by removing ",", ",", "INC", "LLC" and put every name in upper case
-        self.cleanedDataFrame["EMPLOYER_NAME"] = self.cleanedDataFrame["EMPLOYER_NAME"].str.upper()
-        self.cleanedDataFrame["EMPLOYER_NAME"] = self.cleanedDataFrame["EMPLOYER_NAME"].str.replace(
-            '[.,]|INC|LLC|LLP|LP|^\s+|\s+$|\s+(?=\s)', "", regex=True)
+        #self.cleanedDataFrame["EMPLOYER_NAME"] = self.cleanedDataFrame["EMPLOYER_NAME"].str.upper()
+        #self.cleanedDataFrame["EMPLOYER_NAME"] = self.cleanedDataFrame["EMPLOYER_NAME"].str.replace(
+        #    '[.,]|INC|LLC|LLP|LP|^\s+|\s+$|\s+(?=\s)', "", regex=True).rstrip()
+        self.cleanedDataFrame["EMPLOYER_NAME"] = self.cleanedDataFrame["EMPLOYER_NAME"].apply(self.cleanEmployerName)
         
         # Mark major related job true, otherwise false
         self.cleanedDataFrame["IS_MAJOR_RELATED"] = self.cleanedDataFrame["SOC_CODE"].isin(self.majorSOC)
@@ -174,15 +252,6 @@ class AnalyzeQuarterLCA():
         print("Size of table before cleaning: " + str(len(self.rawDataFrame)))
         print("Size of table after cleaning: " + str(len(self.cleanedDataFrame)))
 
-    '''
-    def extractEmployer(self, df: pandas.DataFrame):
-        employers = df["EMPLOYER_NAME"].unique()
-        return employers
-
-    def extractSOC(self, df: pandas.DataFrame, soc: list):
-        jobs = df[df["SOC_CODE"].isin(soc)]  # Extract jobs in given SOC
-        return jobs
-    '''
 
     # Analyze and return the number of visas and the certificated rate
     def analyzeVisa(self, df: pandas.DataFrame):
@@ -225,62 +294,6 @@ class AnalyzeQuarterLCA():
 
         print("Median of job location occurrence is: " + str(locationRslt["EMPLOYER_POSTAL_CODE_OCCURRENCE"].median()))
         return locationRslt
-
-    # Analyze and return the number of major related jobs provided by the employer
-    def analyzeEmployer(self, df: pandas.DataFrame):
-        jobs = df[df["SOC_CODE"].isin(self.majorSOC)]  # Extract jobs in given SOC
-        jobs = jobs.groupby(["YEAR", "EMPLOYER_NAME"]).size().reset_index(name="MAJOR_RELATED_JOBS")
-
-        return jobs
-
-    def generateEmployerReport(self):
-        certificated, h1b = self.analyzeVisa(self.cleanedDataFrame)
-        # certificated = certificated[certificated["CASE_STATUS"] == "Certified"]
-        # h1b = h1b[h1b["VISA_CLASS"] == "H-1B"]
-
-        totalJobs = self.cleanedDataFrame.groupby(["YEAR", "EMPLOYER_NAME"]).size().reset_index(name="TOTAL_JOBS")
-        majorJobs = self.analyzeEmployer(self.cleanedDataFrame)
-
-        # salary = self.analyzeSalary(self.cleanedDataFrame)
-
-        # Merging tables
-        result = majorJobs.merge(totalJobs, on=["YEAR", "EMPLOYER_NAME"])
-        result = result.merge(certificated, on=["YEAR", "EMPLOYER_NAME"])
-        result = result.merge(h1b, on=["YEAR", "EMPLOYER_NAME"])
-        # result = result.merge(salary, on=["YEAR", "EMPLOYER_NAME"])
-
-        # Calculated percentages
-        '''
-        result.insert(loc=2, column="MAJOR_PERCENTAGE",
-                      value=(result["MAJOR_RELATED_JOBS"] / result["TOTAL_JOBS"]) * 100)
-        result.insert(loc=5, column="CERTIFICATED_PERCENTAGE",
-                      value=(result["CASE_STATUS_OCCURRENCE"] / result["TOTAL_JOBS"]) * 100)
-        result.insert(loc=7, column="H1B_PERCENTAGE",
-                      value=(result["VISA_CLASS_OCCURRENCE"] / result["TOTAL_JOBS"]) * 100)
-        '''
-
-        try:
-            self.outputEmployerDataDBEngine.connect().execute(
-                sqlalchemy.text("DROP TABLE " + self.outputEmployerDataTableName + "; "))
-        except Exception as error:
-            print("ERROR: ", error)
-
-        result.to_sql(self.outputEmployerDataTableName, self.outputEmployerDataDBEngine)
-
-    def generateLocationReport(self):
-        try:
-            self.outputLocationDataDBEngine.connect().execute(
-                sqlalchemy.text("DROP TABLE " + self.outputLocationDataTableName + "; "))
-        except Exception as error:
-            print("ERROR: ", error)
-
-        self.analyzeLocation(self.cleanedDataFrame).to_sql(self.outputLocationDataTableName,
-                                                           self.outputLocationDataDBEngine)
-
-    def generateReports(self):
-
-        self.generateEmployerReport()
-        self.generateLocationReport()
 
     def generateBIReport(self):
         result = self.cleanedDataFrame.groupby(
