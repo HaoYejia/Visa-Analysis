@@ -13,7 +13,7 @@ import pandas
 import matplotlib.pyplot as plt
 # from io import BytesIO
 # from svglib.svglib import svg2rlg
-from pylatex import Command, Document, Section, Subsection, LongTable
+from pylatex import Command, Document, Section, Subsection, LongTable, Tabularx, Package
 import re
 
 class GenerateLCAReport():
@@ -31,6 +31,8 @@ class GenerateLCAReport():
         self.employerList = combinedDataTable["EMPLOYER_NAME"].drop_duplicates().sort_values()
         self.elements = []
         self.pdfReport = Document("basic")
+        self.pdfReport.preamble.append(Command('usepackage', ['geometry']))
+        self.pdfReport.preamble.append(Command('geometry', arguments='left=1in, right=1in, top=1in, bottom=1in'))
 
 
     
@@ -73,8 +75,8 @@ class GenerateLCAReport():
 
                 # self.elements.append(table)
                 # self.elements.append(PageBreak())
-
-                with self.pdfReport.create(LongTable("c|c|c|c|c")) as table:
+                
+                with self.pdfReport.create(LongTable(r"c|p{20em}|p{5em}|c|c")) as table:
                     table.add_hline()
                     table.add_row(["Year", "Employer Name", self.majorName + " \n H-1B \n Certified", "Other", "Total"])  # Add column names
                     table.add_hline()
@@ -231,6 +233,7 @@ class GenerateLCAReport():
     def export(self, name):
         print("Exporting PDF")
         self.pdfReport.generate_pdf(name, clean_tex=False)
+        # self.pdfReport.generate_tex(name)
 
     def employerNameToLabel(self, name):
         return "" + str(re.sub("[^A-Za-z]","",name))
