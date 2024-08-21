@@ -11,6 +11,7 @@ import pandas
 # from reportlab.graphics.charts.barcharts import VerticalBarChart
 #from reportlab.platypus.flowables import LinkInPDF
 import matplotlib.pyplot as plt
+import tikzplotlib
 # from io import BytesIO
 # from svglib.svglib import svg2rlg
 from pylatex import Command, Document, Section, Subsection, LongTable, Tabularx, Package
@@ -85,26 +86,30 @@ class GenerateLCAReport():
                         table.add_row(row)
                         table.add_hline()
 
-    '''
-    def drawDetailedPlots(self, size, fontSize, years, primaryData, primaryDataColor, primaryDataName, secondaryData, secondaryDataColor, secondaryDataName):
-        fig, ax = plt.subplots(figsize=size)
-        ax.stackplot(years.values.tolist(),
+   
+    def drawDetailedPlots(self, ax, num, fontSize, years, primaryData, primaryDataColor, primaryDataName, secondaryData, secondaryDataColor, secondaryDataName):
+        # fig, ax = plt.subplots(figsize=size)
+        ax[num].stackplot(years.values.tolist(),
                     primaryData.values.tolist(),
                     secondaryData.values.tolist(),
                     colors = [primaryDataColor, secondaryDataColor])
-        ax.set_xticks(years.values.tolist())
-        ax.legend([primaryDataName, secondaryDataName],fontsize=fontSize)
+        ax[num].set_xticks(years.values.tolist())
+        ax[num].legend([primaryDataName, secondaryDataName],fontsize=fontSize)
 
         # Save the plot to a BytesIO object
-        img_buffer = BytesIO()
-        plt.savefig(img_buffer, format='svg')
-        plt.close(fig)
-        img_buffer.seek(0)
-        drawing = svg2rlg(img_buffer)
-        return drawing
-    
+        # img_buffer = BytesIO()
+        # plt.savefig(img_buffer, format='svg')
+        # plt.close(fig)
+        # img_buffer.seek(0)
+        # drawing = svg2rlg(img_buffer)
+        # return drawing
+        
+        
+
+        
+
     def generateEmployerDetailedPages(self):
-        styles = reportlab.lib.styles.getSampleStyleSheet()
+        # styles = reportlab.lib.styles.getSampleStyleSheet()
 
         for index, name in self.employerList.items():
             dataTable = self.countCategoryTable[self.countCategoryTable["EMPLOYER_NAME"] == name]
@@ -114,14 +119,14 @@ class GenerateLCAReport():
                 continue
             
             
-            #if (index > 8000):
-            #    break
+            if (index > 1000):
+               break
             
 
             print("Generating detailed page for {}".format(name))
 
             # Title of page
-            self.elements.append(Paragraph("<a name=\"{TAG}\"/>Detailed Page for {NAME}".format(NAME=name, TAG=self.employerNameToLabel(name)), styles['Title']))
+            # self.elements.append(Paragraph("<a name=\"{TAG}\"/>Detailed Page for {NAME}".format(NAME=name, TAG=self.employerNameToLabel(name)), styles['Title']))
 
             # fig, ax = plt.subplots(figsize=(5,2))
             # ax.stackplot(dataTable["YEAR"].values.tolist(),
@@ -137,37 +142,39 @@ class GenerateLCAReport():
             # img_buffer.seek(0)
             # drawing = svg2rlg(img_buffer)
 
+            fig, ax = plt.subplots(nrows=3, figsize=(5.3,6))
 
-            self.elements.append(self.drawDetailedPlots(size=(5.3,1.7), fontSize=7,
-                                                        years=dataTable["YEAR"],
-                                                        primaryData=dataTable["H1B_CER_MAJ_JOB_NUM"],
-                                                        primaryDataColor="#77AC30",
-                                                        primaryDataName="{} Certified H-1B Jobs".format(self.majorName),
-                                                        secondaryData=dataTable["NEITHER_H1B_CER_MAJ_JOB_NUM"],
-                                                        secondaryDataColor="tab:gray",
-                                                        secondaryDataName="Other Jobs"))
-            self.elements.append(Spacer(1,3))
-
-            self.elements.append(self.drawDetailedPlots(size=(5.3,1.7), fontSize=7,
-                                                        years=dataTable["YEAR"],
-                                                        primaryData=dataTable["H1B_JOB_NUM"],
-                                                        primaryDataColor="#82B0D2",
-                                                        primaryDataName="H-1B Visa",
-                                                        secondaryData=dataTable["NOT_H1B_JOB_NUM"],
-                                                        secondaryDataColor="tab:gray",
-                                                        secondaryDataName="Other Visa"))
-            self.elements.append(Spacer(1,3))
+            self.drawDetailedPlots(ax=ax, num=0, fontSize=7,
+                                    years=dataTable["YEAR"],
+                                    primaryData=dataTable["H1B_CER_MAJ_JOB_NUM"],
+                                    primaryDataColor="#77AC30",
+                                    primaryDataName="{} Certified H-1B Jobs".format(self.majorName),
+                                    secondaryData=dataTable["NEITHER_H1B_CER_MAJ_JOB_NUM"],
+                                    secondaryDataColor="tab:gray",
+                                    secondaryDataName="Other Jobs")
             
-            self.elements.append(self.drawDetailedPlots(size=(5.3,1.7), fontSize=7,
-                                                        years=dataTable["YEAR"],
-                                                        primaryData=dataTable["CER_JOB_NUM"],
-                                                        primaryDataColor="#82B0D2",
-                                                        primaryDataName="Certified",
-                                                        secondaryData=dataTable["NOT_CER_JOB_NUM"],
-                                                        secondaryDataColor="tab:gray",
-                                                        secondaryDataName="Not Certified"))
-            self.elements.append(Spacer(1,3))
+            
 
+            self.drawDetailedPlots(ax=ax, num=1, fontSize=7,
+                                    years=dataTable["YEAR"],
+                                    primaryData=dataTable["H1B_JOB_NUM"],
+                                    primaryDataColor="#82B0D2",
+                                    primaryDataName="H-1B Visa",
+                                    secondaryData=dataTable["NOT_H1B_JOB_NUM"],
+                                    secondaryDataColor="tab:gray",
+                                    secondaryDataName="Other Visa")
+            
+            self.drawDetailedPlots(ax=ax, num=2, fontSize=7,
+                                    years=dataTable["YEAR"],
+                                    primaryData=dataTable["CER_JOB_NUM"],
+                                    primaryDataColor="#82B0D2",
+                                    primaryDataName="Certified",
+                                    secondaryData=dataTable["NOT_CER_JOB_NUM"],
+                                    secondaryDataColor="tab:gray",
+                                    secondaryDataName="Not Certified")
+            
+            plt.savefig("test.pdf", format='pdf')
+            return
 
             table = reportlab.platypus.Table([["Year", self.majorName + " H-1B Certified", "H-1B", "Certified" , "Total"]] + dataTable[["YEAR", "H1B_CER_MAJ_JOB_NUM", "H1B_JOB_NUM","CER_JOB_NUM","TOTAL"]].values.tolist())
 
@@ -188,7 +195,7 @@ class GenerateLCAReport():
 
             self.elements.append(PageBreak())
         return
-        '''
+
     
     def countCategoryOfCombinedData(self, combinedData):
 
