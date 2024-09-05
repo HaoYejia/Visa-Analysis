@@ -111,6 +111,8 @@ class GenerateLCAReport():
     def generateEmployerDetailedPages(self):
         # styles = reportlab.lib.styles.getSampleStyleSheet()
 
+        tempImgPath = "./temp_img/"
+
         for index, name in self.employerList.items():
             dataTable = self.countCategoryTable[self.countCategoryTable["EMPLOYER_NAME"] == name]
 
@@ -118,8 +120,8 @@ class GenerateLCAReport():
             if ((dataTable["H1B_CER_MAJ_JOB_NUM"] < self.jobNumLimit).all().all()):
                 continue
             
-            
-            if (index > 1000):
+            # limit numbers of employers for faster debug
+            if (index > 5000):
                break
             
 
@@ -173,27 +175,30 @@ class GenerateLCAReport():
                                     secondaryDataColor="tab:gray",
                                     secondaryDataName="Not Certified")
             
-            plt.savefig("test.pdf", format='pdf')
-            return
+            detailedImgName = "{filename}.pdf".format(filename=(self.employerNameToLabel(name) + "_detailed"))
+                                                      
+            plt.savefig((tempImgPath + detailedImgName), format='pdf')
+            
+            # return
 
-            table = reportlab.platypus.Table([["Year", self.majorName + " H-1B Certified", "H-1B", "Certified" , "Total"]] + dataTable[["YEAR", "H1B_CER_MAJ_JOB_NUM", "H1B_JOB_NUM","CER_JOB_NUM","TOTAL"]].values.tolist())
+            # table = reportlab.platypus.Table([["Year", self.majorName + " H-1B Certified", "H-1B", "Certified" , "Total"]] + dataTable[["YEAR", "H1B_CER_MAJ_JOB_NUM", "H1B_JOB_NUM","CER_JOB_NUM","TOTAL"]].values.tolist())
 
-            self.elements.append(Spacer(1,8))
-            self.elements.append(table)
+            # self.elements.append(Spacer(1,8))
+            # self.elements.append(table)
 
-            tablestyle = reportlab.platypus.TableStyle([
-                ('BACKGROUND', (0, 0), (-1, 0), reportlab.lib.colors.grey),
-                ('TEXTCOLOR', (0, 0), (-1, 0), reportlab.lib.colors.whitesmoke),
-                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                #('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-                ('FONTSIZE', (0, 0), (-1, 0), 10),
-                ('BOTTOMPADDING', (0, 0), (-1, 0), 10),
-                ('BACKGROUND', (0, 1), (-1, -1), reportlab.lib.colors.white),
-                ('GRID', (0, 0), (-1, -1), 1, reportlab.lib.colors.black),
-            ])
-            table.setStyle(tablestyle)
+            # tablestyle = reportlab.platypus.TableStyle([
+            #     ('BACKGROUND', (0, 0), (-1, 0), reportlab.lib.colors.grey),
+            #     ('TEXTCOLOR', (0, 0), (-1, 0), reportlab.lib.colors.whitesmoke),
+            #     ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+            #     #('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            #     ('FONTSIZE', (0, 0), (-1, 0), 10),
+            #     ('BOTTOMPADDING', (0, 0), (-1, 0), 10),
+            #     ('BACKGROUND', (0, 1), (-1, -1), reportlab.lib.colors.white),
+            #     ('GRID', (0, 0), (-1, -1), 1, reportlab.lib.colors.black),
+            # ])
+            # table.setStyle(tablestyle)
 
-            self.elements.append(PageBreak())
+            # self.elements.append(PageBreak())
         return
 
     
@@ -243,5 +248,5 @@ class GenerateLCAReport():
         # self.pdfReport.generate_tex(name)
 
     def employerNameToLabel(self, name):
-        return "" + str(re.sub("[^A-Za-z]","",name))
+        return "" + str(re.sub("[^A-Za-z0-9]","",name))
     
