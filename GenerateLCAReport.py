@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import tikzplotlib
 # from io import BytesIO
 # from svglib.svglib import svg2rlg
-from pylatex import Command, Document, Section, Subsection, LongTable, Tabularx, Package
+from pylatex import Command, Document, Section, Subsection, LongTable, Tabularx, Package, Figure, NoEscape
 import re
 
 class GenerateLCAReport():
@@ -112,39 +112,32 @@ class GenerateLCAReport():
         # styles = reportlab.lib.styles.getSampleStyleSheet()
 
         tempImgPath = "./temp_img/"
+        
+        # Do not create detailed page if total number of certified major jobs of this company never exceeds the limit
+        # First, create a boolean Series for each employer whether they exceed the jobNumLimit or not
+        exceedsLimit = self.countCategoryTable.groupby('EMPLOYER_NAME')['H1B_CER_MAJ_JOB_NUM'].max() >= self.jobNumLimit
+        # Filter out the employers who do not exceed the limit
+        validEmployers = exceedsLimit[exceedsLimit].index
 
-        for index, name in self.employerList.items():
+        # limit numbers of employers for faster debug
+        validEmployers = validEmployers[:10]
+            
+        
+        # Create detailed pages only for those employers who meet the criteria
+        for name in validEmployers:
+
+        # for index, name in self.employerList.items():
             dataTable = self.countCategoryTable[self.countCategoryTable["EMPLOYER_NAME"] == name]
 
-            # Do not create detailed page if total number of certified major jobs of this company never exceeds the limit
-            if ((dataTable["H1B_CER_MAJ_JOB_NUM"] < self.jobNumLimit).all().all()):
-                continue
+        
+        #     if ((dataTable["H1B_CER_MAJ_JOB_NUM"] < self.jobNumLimit).all().all()):
+        #         continue
             
-            # limit numbers of employers for faster debug
-            if (index > 5000):
-               break
-            
+          
 
             print("Generating detailed page for {}".format(name))
 
-            # Title of page
-            # self.elements.append(Paragraph("<a name=\"{TAG}\"/>Detailed Page for {NAME}".format(NAME=name, TAG=self.employerNameToLabel(name)), styles['Title']))
-
-            # fig, ax = plt.subplots(figsize=(5,2))
-            # ax.stackplot(dataTable["YEAR"].values.tolist(),
-            #             dataTable["H1B_CER_MAJ_JOB_NUM"].values.tolist(),
-            #             dataTable["NEITHER_H1B_CER_MAJ_JOB_NUM"].values.tolist(),
-            #             colors = ["#77AC30", "tab:gray"])
-            # ax.set_xticks(dataTable["YEAR"].values.tolist())
-            # ax.legend(["{} Certified H-1B Jobs".format(self.majorName), "Other Jobs"],fontsize=7)
-            # # Save the plot to a BytesIO object
-            # img_buffer = BytesIO()
-            # plt.savefig(img_buffer, format='svg')
-            # plt.close(fig)
-            # img_buffer.seek(0)
-            # drawing = svg2rlg(img_buffer)
-
-            fig, ax = plt.subplots(nrows=3, figsize=(5.3,6))
+            fig, ax = plt.subplots(nrows=3, figsize=(5.3,5.5))
 
             self.drawDetailedPlots(ax=ax, num=0, fontSize=7,
                                     years=dataTable["YEAR"],
@@ -199,6 +192,9 @@ class GenerateLCAReport():
             # table.setStyle(tablestyle)
 
             # self.elements.append(PageBreak())
+            with self.pdfReport.create(Section(name + ":")):
+                with self.pdfReport.create(Figure(position="h")) as plot:
+                    plot.add_image(filename=(tempImgPath + detailedImgName), width=NoEscape(r"0.9\textwidth"))
         return
 
     
