@@ -1,7 +1,7 @@
 import pandas
 import matplotlib.pyplot as plt
 import tikzplotlib
-from pylatex import Command, Document, Section, Subsection, LongTable, Tabularx, Package, Figure, NoEscape
+from pylatex import Command, Document, Section, Subsection, LongTable, Tabularx, Package, Figure, NoEscape, Hyperref, Marker, Label
 import re
 
 class GenerateLCAReport():
@@ -27,13 +27,6 @@ class GenerateLCAReport():
         self.pdfReport.append(Command('tableofcontents'))
         self.pdfReport.append(Command('newpage'))
 
-
-
-    
-    def employerNameToParagraph(self, name):
-        #return Paragraph("<a href=\"#{TAG}\"> {NAME} </a>".format(TAG=self.employerNameToLabel(name), NAME=name))
-        return name
-
     def generateYearEmployerGeneralTable(self, yearRange):
         #employerGeneralTable = self.generateEmployerGeneralDataFrame()
         #styles = reportlab.lib.styles.getSampleStyleSheet()
@@ -50,7 +43,7 @@ class GenerateLCAReport():
                     yearEmployerGeneralTable = self.countCategoryTable[(self.countCategoryTable["YEAR"] == (year))]
                     yearEmployerGeneralTable = yearEmployerGeneralTable[["YEAR", "EMPLOYER_NAME", "H1B_CER_MAJ_JOB_NUM","NEITHER_H1B_CER_MAJ_JOB_NUM",  "TOTAL"]]
                     yearEmployerGeneralTable = yearEmployerGeneralTable[yearEmployerGeneralTable["H1B_CER_MAJ_JOB_NUM"] >= self.jobNumLimit]
-                    yearEmployerGeneralTable["EMPLOYER_NAME"] = yearEmployerGeneralTable["EMPLOYER_NAME"].apply(self.employerNameToParagraph)
+                    yearEmployerGeneralTable["EMPLOYER_NAME"] = yearEmployerGeneralTable["EMPLOYER_NAME"].apply(self.employerNameToRef)
                     yearEmployerGeneralTable = yearEmployerGeneralTable.sort_values(by=["H1B_CER_MAJ_JOB_NUM"], ascending=False)
 
                     
@@ -88,7 +81,7 @@ class GenerateLCAReport():
         validEmployers = exceedsLimit[exceedsLimit].index
 
         # limit numbers of employers for faster debug
-        validEmployers = validEmployers[:10]
+        # validEmployers = validEmployers[:10]
             
         with self.pdfReport.create(Section("Employer Detail")):
 
@@ -130,15 +123,27 @@ class GenerateLCAReport():
                                         secondaryDataColor="tab:gray",
                                         secondaryDataName="Not Certified")
                 
-                detailedImgName = "{filename}.pdf".format(filename=(self.employerNameToLabel(name) + "_detailed"))
+                detailedImgName = "{filename}.pdf".format(filename=(self.employerNameToLabel(name) + "img"))
                                                         
                 plt.savefig((tempImgPath + detailedImgName), format='pdf')
+                plt.clf()
+                plt.close('all')
 
                 with self.pdfReport.create(Subsection(name + ":")):
-                    self.pdfReport.append("Visa Data Chart:")
+                    self.pdfReport.append(Label(Marker(self.employerNameToLabel(name))))
+
                     with self.pdfReport.create(Figure(position="htbp")) as plot:
                         plot.add_image(filename=(tempImgPath + detailedImgName), width=NoEscape(r"0.9\textwidth"))
-                
+                    
+                    with self.pdfReport.create(LongTable(r"c|c|c|c|c")) as table:
+                        table.add_hline()
+                        table.add_row(["Year", self.majorName + " H-1B Certified", "H-1B", "Certified" , "Total"])  # Add column names
+                        table.add_hline()
+
+                        for index, row in dataTable[["YEAR", "H1B_CER_MAJ_JOB_NUM", "H1B_JOB_NUM","CER_JOB_NUM","TOTAL"]].iterrows():
+                            table.add_row(row)
+                            table.add_hline()
+
                 self.pdfReport.append(Command('newpage'))
 
     
@@ -188,5 +193,9 @@ class GenerateLCAReport():
         self.pdfReport.generate_tex(name)
 
     def employerNameToLabel(self, name):
-        return "" + str(re.sub("[^A-Za-z0-9]","",name))
+        return "" + str(re.sub("[^A-Za-z0-9]","",name)) + "_detailed"
+    
+    def employerNameToRef(self, name):
+        # return NoEscape(r"" + r"\ref{" + self.employerNameToLabel(name)  + r"}")
+        return Hyperref(marker=Marker(name, prefix="subsec"), text=name)
     

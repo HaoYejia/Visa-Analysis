@@ -1,16 +1,527 @@
-\contentsline {section}{\numberline {1}General Table}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}2020 General Table}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}2021 General Table}{9}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}2022 General Table}{17}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}2023 General Table}{23}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Employer Detail}{29}{section.2}%
-\contentsline {subsection}{\numberline {2.1}A123 SYSTEMS:}{29}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}ABB:}{30}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}ABM CONTROLS:}{31}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}ACCENTURE:}{32}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}ACHRONIX SEMICONDUCTOR CORPORATION:}{33}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}ACTALENT SERVICES:}{34}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}ACUITY BRANDS LIGHTING:}{35}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}ADEPT CHIP TECHNOLOGIES:}{36}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}ADI WORLDLINK:}{37}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}ADVANCED ENERGY INDUSTRIES:}{38}{subsection.2.10}%
+\contentsline {section}{\numberline {1}General Table}{11}{section.1}%
+\contentsline {subsection}{\numberline {1.1}2020 General Table}{11}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}2021 General Table}{18}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}2022 General Table}{26}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}2023 General Table}{32}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Employer Detail}{38}{section.2}%
+\contentsline {subsection}{\numberline {2.1}A123 SYSTEMS:}{38}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}ABB:}{39}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}ABM CONTROLS:}{40}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}ACCENTURE:}{41}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}ACHRONIX SEMICONDUCTOR CORPORATION:}{42}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}ACTALENT SERVICES:}{43}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}ACUITY BRANDS LIGHTING:}{44}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}ADEPT CHIP TECHNOLOGIES:}{45}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}ADI WORLDLINK:}{46}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}ADVANCED ENERGY INDUSTRIES:}{47}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}ADVANCED MICRO DEVICES:}{48}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}ADVANSOFT INTERNATIONAL:}{49}{subsection.2.12}%
+\contentsline {subsection}{\numberline {2.13}ADVANTEST AMERICA:}{50}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}AECOM TECHNICAL SERVICES:}{51}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.15}AES CLEAN ENERGY SERVICES:}{52}{subsection.2.15}%
+\contentsline {subsection}{\numberline {2.16}AEVA:}{53}{subsection.2.16}%
+\contentsline {subsection}{\numberline {2.17}AFE:}{54}{subsection.2.17}%
+\contentsline {subsection}{\numberline {2.18}AHA AND OMEGA SEMICONDUCTOR ORPORATED:}{55}{subsection.2.18}%
+\contentsline {subsection}{\numberline {2.19}AHA{-}NUMERO TECHNOLOGY SOLUTIONS:}{56}{subsection.2.19}%
+\contentsline {subsection}{\numberline {2.20}AIC INTERNATIONAL:}{57}{subsection.2.20}%
+\contentsline {subsection}{\numberline {2.21}AIRSPAN NETWORKS:}{58}{subsection.2.21}%
+\contentsline {subsection}{\numberline {2.22}ALCON RESEARCH:}{59}{subsection.2.22}%
+\contentsline {subsection}{\numberline {2.23}ALLEGRO MICROSYSTEMS:}{60}{subsection.2.23}%
+\contentsline {subsection}{\numberline {2.24}ALLIANCE FOR SUSTAINABLE ENERGY:}{61}{subsection.2.24}%
+\contentsline {subsection}{\numberline {2.25}ALSTOM:}{62}{subsection.2.25}%
+\contentsline {subsection}{\numberline {2.26}ALTAIR PRODUCTDESIGN:}{63}{subsection.2.26}%
+\contentsline {subsection}{\numberline {2.27}ALTEN TECHNOLOGY USA:}{64}{subsection.2.27}%
+\contentsline {subsection}{\numberline {2.28}ALTRAN ENGINEERING SOLUTIONS:}{65}{subsection.2.28}%
+\contentsline {subsection}{\numberline {2.29}ALTRAN SOFTWARE US:}{66}{subsection.2.29}%
+\contentsline {subsection}{\numberline {2.30}AMAZON:}{67}{subsection.2.30}%
+\contentsline {subsection}{\numberline {2.31}AMBARELLA CORP:}{68}{subsection.2.31}%
+\contentsline {subsection}{\numberline {2.32}AMBARELLA CORPORATION:}{69}{subsection.2.32}%
+\contentsline {subsection}{\numberline {2.33}AMBIQ MICRO:}{70}{subsection.2.33}%
+\contentsline {subsection}{\numberline {2.34}AMDOCS:}{71}{subsection.2.34}%
+\contentsline {subsection}{\numberline {2.35}AMERICAN AXLE \& MANUFACTURING:}{72}{subsection.2.35}%
+\contentsline {subsection}{\numberline {2.36}AMERICAN ELECTRIC POWER:}{73}{subsection.2.36}%
+\contentsline {subsection}{\numberline {2.37}AMERICLOUD SOLUTIONS:}{74}{subsection.2.37}%
+\contentsline {subsection}{\numberline {2.38}AMERICLOUD TELECOM SOLUTIONS:}{75}{subsection.2.38}%
+\contentsline {subsection}{\numberline {2.39}AMPERE COMPUTING:}{76}{subsection.2.39}%
+\contentsline {subsection}{\numberline {2.40}ANALOG DEVICES:}{77}{subsection.2.40}%
+\contentsline {subsection}{\numberline {2.41}ANOKIWAVE:}{78}{subsection.2.41}%
+\contentsline {subsection}{\numberline {2.42}ANSYS:}{79}{subsection.2.42}%
+\contentsline {subsection}{\numberline {2.43}APEX CLEAN ENERGY:}{80}{subsection.2.43}%
+\contentsline {subsection}{\numberline {2.44}APPLE:}{81}{subsection.2.44}%
+\contentsline {subsection}{\numberline {2.45}APPLIED MATERIALS:}{82}{subsection.2.45}%
+\contentsline {subsection}{\numberline {2.46}APPLIED OPTOELECTRONICS:}{83}{subsection.2.46}%
+\contentsline {subsection}{\numberline {2.47}APTIV CORPORATION:}{84}{subsection.2.47}%
+\contentsline {subsection}{\numberline {2.48}ARCADIS US:}{85}{subsection.2.48}%
+\contentsline {subsection}{\numberline {2.49}ARGO AI:}{86}{subsection.2.49}%
+\contentsline {subsection}{\numberline {2.50}ARICENT NA:}{87}{subsection.2.50}%
+\contentsline {subsection}{\numberline {2.51}ARICENT TECHNOLOGIES (HOLDINGS) LTD:}{88}{subsection.2.51}%
+\contentsline {subsection}{\numberline {2.52}ARM:}{89}{subsection.2.52}%
+\contentsline {subsection}{\numberline {2.53}ARRIS GLOBAL SERVICES:}{90}{subsection.2.53}%
+\contentsline {subsection}{\numberline {2.54}ARRIVER SOFTWARE:}{91}{subsection.2.54}%
+\contentsline {subsection}{\numberline {2.55}ARTERIS:}{92}{subsection.2.55}%
+\contentsline {subsection}{\numberline {2.56}ARUP NORTH AMERICA LTD:}{93}{subsection.2.56}%
+\contentsline {subsection}{\numberline {2.57}ARUP US:}{94}{subsection.2.57}%
+\contentsline {subsection}{\numberline {2.58}ASM AMERICA:}{95}{subsection.2.58}%
+\contentsline {subsection}{\numberline {2.59}ASML US:}{96}{subsection.2.59}%
+\contentsline {subsection}{\numberline {2.60}ASTERA LABS:}{97}{subsection.2.60}%
+\contentsline {subsection}{\numberline {2.61}ATIEVA USA:}{98}{subsection.2.61}%
+\contentsline {subsection}{\numberline {2.62}ATLANTA TRADING \& ENGINEERING CONSULTING:}{99}{subsection.2.62}%
+\contentsline {subsection}{\numberline {2.63}ATLAS WIRELESS AND TELECOMMUNICATIONS:}{100}{subsection.2.63}%
+\contentsline {subsection}{\numberline {2.64}ATRONIX ACQUISITION CORP:}{101}{subsection.2.64}%
+\contentsline {subsection}{\numberline {2.65}AUMRAJ:}{102}{subsection.2.65}%
+\contentsline {subsection}{\numberline {2.66}AURIS HEALTH:}{103}{subsection.2.66}%
+\contentsline {subsection}{\numberline {2.67}AURORA INNOVATION:}{104}{subsection.2.67}%
+\contentsline {subsection}{\numberline {2.68}AUTOMATED BUILDING MANAGEMENT SYSTEMS:}{105}{subsection.2.68}%
+\contentsline {subsection}{\numberline {2.69}AUTOMATION SYSTEMS \& DESIGN:}{106}{subsection.2.69}%
+\contentsline {subsection}{\numberline {2.70}AUTOMOTIVE ROBOTICS:}{107}{subsection.2.70}%
+\contentsline {subsection}{\numberline {2.71}AVAGO TECHNOLOGIES US:}{108}{subsection.2.71}%
+\contentsline {subsection}{\numberline {2.72}AVNERA CORPORATION:}{109}{subsection.2.72}%
+\contentsline {subsection}{\numberline {2.73}AXIADO CORPORATION:}{110}{subsection.2.73}%
+\contentsline {subsection}{\numberline {2.74}AY DEE KAY:}{111}{subsection.2.74}%
+\contentsline {subsection}{\numberline {2.75}AYAAN DBA GBS WIRELESS:}{112}{subsection.2.75}%
+\contentsline {subsection}{\numberline {2.76}BANNER ENGINEERING CORP:}{113}{subsection.2.76}%
+\contentsline {subsection}{\numberline {2.77}BATTELLE MEMORIAL INSTITUTE:}{114}{subsection.2.77}%
+\contentsline {subsection}{\numberline {2.78}BAXALTA US:}{115}{subsection.2.78}%
+\contentsline {subsection}{\numberline {2.79}BAYER US:}{116}{subsection.2.79}%
+\contentsline {subsection}{\numberline {2.80}BENDIX COMMERCIAL VEHICLE SYSTEMS:}{117}{subsection.2.80}%
+\contentsline {subsection}{\numberline {2.81}BITSILICA:}{118}{subsection.2.81}%
+\contentsline {subsection}{\numberline {2.82}BLACK \& VEATCH CORPORATION:}{119}{subsection.2.82}%
+\contentsline {subsection}{\numberline {2.83}BLACK CONSTRUCTION CORPORATION:}{120}{subsection.2.83}%
+\contentsline {subsection}{\numberline {2.84}BLOOM ENERGY CORPORATION:}{121}{subsection.2.84}%
+\contentsline {subsection}{\numberline {2.85}BORGWARNER:}{122}{subsection.2.85}%
+\contentsline {subsection}{\numberline {2.86}BORN:}{123}{subsection.2.86}%
+\contentsline {subsection}{\numberline {2.87}BROADCOM CORPORATION:}{124}{subsection.2.87}%
+\contentsline {subsection}{\numberline {2.88}BROOKHAVEN NATIONAL LABORATORY:}{125}{subsection.2.88}%
+\contentsline {subsection}{\numberline {2.89}BURNS \& MCDONNELL:}{126}{subsection.2.89}%
+\contentsline {subsection}{\numberline {2.90}BURNS ENGINEERING:}{127}{subsection.2.90}%
+\contentsline {subsection}{\numberline {2.91}BYOND:}{128}{subsection.2.91}%
+\contentsline {subsection}{\numberline {2.92}BYTON NORTH AMERICA CORPORATION:}{129}{subsection.2.92}%
+\contentsline {subsection}{\numberline {2.93}CADENCE DESIGN SYSTEMS:}{130}{subsection.2.93}%
+\contentsline {subsection}{\numberline {2.94}CALIFORNIA INDEPENDENT SYSTEM OPERATOR CORPORATION:}{131}{subsection.2.94}%
+\contentsline {subsection}{\numberline {2.95}CALIFORNIA INSTITUTE OF TECHNOLOGY/JET PROPULSION LABORATORY:}{132}{subsection.2.95}%
+\contentsline {subsection}{\numberline {2.96}CALSOFT LABS:}{133}{subsection.2.96}%
+\contentsline {subsection}{\numberline {2.97}CANOO:}{134}{subsection.2.97}%
+\contentsline {subsection}{\numberline {2.98}CAPGEMINI AMERICA:}{135}{subsection.2.98}%
+\contentsline {subsection}{\numberline {2.99}CARESOFT GLOBAL:}{136}{subsection.2.99}%
+\contentsline {subsection}{\numberline {2.100}CARESOFT GLOBAL TECHNOLOGIES:}{137}{subsection.2.100}%
+\contentsline {subsection}{\numberline {2.101}CATERPILLAR:}{138}{subsection.2.101}%
+\contentsline {subsection}{\numberline {2.102}CB\&I:}{139}{subsection.2.102}%
+\contentsline {subsection}{\numberline {2.103}CERIUM SYSTEMS:}{140}{subsection.2.103}%
+\contentsline {subsection}{\numberline {2.104}CH2M HILL:}{141}{subsection.2.104}%
+\contentsline {subsection}{\numberline {2.105}CHARGEPOINT:}{142}{subsection.2.105}%
+\contentsline {subsection}{\numberline {2.106}CHIPONTIME TECHNOLOGIES USA:}{143}{subsection.2.106}%
+\contentsline {subsection}{\numberline {2.107}CIBER GLOBAL:}{144}{subsection.2.107}%
+\contentsline {subsection}{\numberline {2.108}CIRRUS LOGIC:}{145}{subsection.2.108}%
+\contentsline {subsection}{\numberline {2.109}CISCO SYSTEMS:}{146}{subsection.2.109}%
+\contentsline {subsection}{\numberline {2.110}CNH INDUSTRIAL AMERICA:}{147}{subsection.2.110}%
+\contentsline {subsection}{\numberline {2.111}COMMONWEALTH EDISON AN EXELON COMPANY:}{148}{subsection.2.111}%
+\contentsline {subsection}{\numberline {2.112}COMMSCOPE TECHNOLOGIES:}{149}{subsection.2.112}%
+\contentsline {subsection}{\numberline {2.113}COMMUNICATIONS TEST DESIGN:}{150}{subsection.2.113}%
+\contentsline {subsection}{\numberline {2.114}COMPASS:}{151}{subsection.2.114}%
+\contentsline {subsection}{\numberline {2.115}CONTINENTAL AUTOMOTIVE SYSTEMS:}{152}{subsection.2.115}%
+\contentsline {subsection}{\numberline {2.116}CORDOBA CORP:}{153}{subsection.2.116}%
+\contentsline {subsection}{\numberline {2.117}CORE TECH CONSTRUCTION CORPORATION:}{154}{subsection.2.117}%
+\contentsline {subsection}{\numberline {2.118}CORE TECH INTERNATIONAL CORPORATION:}{155}{subsection.2.118}%
+\contentsline {subsection}{\numberline {2.119}CORNELL UNIVERSITY:}{156}{subsection.2.119}%
+\contentsline {subsection}{\numberline {2.120}CORNING OPTICAL COMMUNICATIONS:}{157}{subsection.2.120}%
+\contentsline {subsection}{\numberline {2.121}CORNING ORPORATED:}{158}{subsection.2.121}%
+\contentsline {subsection}{\numberline {2.122}CORNING RESEARCH \& DEVELOPMENT CORPORATION:}{159}{subsection.2.122}%
+\contentsline {subsection}{\numberline {2.123}CORPORATE EMPLOYMENT RESOURCES:}{160}{subsection.2.123}%
+\contentsline {subsection}{\numberline {2.124}COTMAC ELECTRONICS:}{161}{subsection.2.124}%
+\contentsline {subsection}{\numberline {2.125}COVIDIEN:}{162}{subsection.2.125}%
+\contentsline {subsection}{\numberline {2.126}CREE:}{163}{subsection.2.126}%
+\contentsline {subsection}{\numberline {2.127}CRUISE:}{164}{subsection.2.127}%
+\contentsline {subsection}{\numberline {2.128}CUMMINS:}{165}{subsection.2.128}%
+\contentsline {subsection}{\numberline {2.129}CYIENT:}{166}{subsection.2.129}%
+\contentsline {subsection}{\numberline {2.130}CYMER:}{167}{subsection.2.130}%
+\contentsline {subsection}{\numberline {2.131}CYPRESS SEMICONDUCTOR CORPORATION:}{168}{subsection.2.131}%
+\contentsline {subsection}{\numberline {2.132}DANA HEAVY VEHICLE SYSTEMS GROUP:}{169}{subsection.2.132}%
+\contentsline {subsection}{\numberline {2.133}DANFOSS:}{170}{subsection.2.133}%
+\contentsline {subsection}{\numberline {2.134}DANFOSS POWER SOLUTIONS (US) COMPANY:}{171}{subsection.2.134}%
+\contentsline {subsection}{\numberline {2.135}DC GROUP:}{172}{subsection.2.135}%
+\contentsline {subsection}{\numberline {2.136}DEERE \& COMPANY:}{173}{subsection.2.136}%
+\contentsline {subsection}{\numberline {2.137}DEHI TECHNOLOGIES SERVICES:}{174}{subsection.2.137}%
+\contentsline {subsection}{\numberline {2.138}DELART TECHNOLOGY SERVICES:}{175}{subsection.2.138}%
+\contentsline {subsection}{\numberline {2.139}DELL PRODUCTS LP:}{176}{subsection.2.139}%
+\contentsline {subsection}{\numberline {2.140}DELTA ELECTRONICS (AMERICAS) LTD:}{177}{subsection.2.140}%
+\contentsline {subsection}{\numberline {2.141}DEMATIC CORP:}{178}{subsection.2.141}%
+\contentsline {subsection}{\numberline {2.142}DEXTERITY:}{179}{subsection.2.142}%
+\contentsline {subsection}{\numberline {2.143}DIALOG SEMICONDUCTOR:}{180}{subsection.2.143}%
+\contentsline {subsection}{\numberline {2.144}DIDI RESEARCH AMERICA:}{181}{subsection.2.144}%
+\contentsline {subsection}{\numberline {2.145}DIGIOIA GRAY \& ASSOCIATES:}{182}{subsection.2.145}%
+\contentsline {subsection}{\numberline {2.146}DISH NETWORK:}{183}{subsection.2.146}%
+\contentsline {subsection}{\numberline {2.147}DISH WIRELESS:}{184}{subsection.2.147}%
+\contentsline {subsection}{\numberline {2.148}DNV ENERGY USA:}{185}{subsection.2.148}%
+\contentsline {subsection}{\numberline {2.149}DOCOMO PACIFIC:}{186}{subsection.2.149}%
+\contentsline {subsection}{\numberline {2.150}DOOSAN UKUDU POWER:}{187}{subsection.2.150}%
+\contentsline {subsection}{\numberline {2.151}DSI TELECOM:}{188}{subsection.2.151}%
+\contentsline {subsection}{\numberline {2.152}DTE ELECTRIC COMPANY:}{189}{subsection.2.152}%
+\contentsline {subsection}{\numberline {2.153}DUKE UNIVERSITY AND HEALTH SYSTEM:}{190}{subsection.2.153}%
+\contentsline {subsection}{\numberline {2.154}EASI:}{191}{subsection.2.154}%
+\contentsline {subsection}{\numberline {2.155}EATON CORPORATION:}{192}{subsection.2.155}%
+\contentsline {subsection}{\numberline {2.156}EDP RENEWABLES NORTH AMERICA:}{193}{subsection.2.156}%
+\contentsline {subsection}{\numberline {2.157}EINFOCHIPS:}{194}{subsection.2.157}%
+\contentsline {subsection}{\numberline {2.158}ELECTRIC POWER GROUP:}{195}{subsection.2.158}%
+\contentsline {subsection}{\numberline {2.159}ELECTRIC POWER RESEARCH INSTITUTE:}{196}{subsection.2.159}%
+\contentsline {subsection}{\numberline {2.160}ELECTRIC POWER SYSTEMS INTERNATIONAL:}{197}{subsection.2.160}%
+\contentsline {subsection}{\numberline {2.161}ELECTRIC RELIABILITY COUNCIL OF TEXAS:}{198}{subsection.2.161}%
+\contentsline {subsection}{\numberline {2.162}EMB ELECTRICAL:}{199}{subsection.2.162}%
+\contentsline {subsection}{\numberline {2.163}EMC2 ELECTRICAL:}{200}{subsection.2.163}%
+\contentsline {subsection}{\numberline {2.164}EN ENGINEERING:}{201}{subsection.2.164}%
+\contentsline {subsection}{\numberline {2.165}ENERSYS DELAWARE:}{202}{subsection.2.165}%
+\contentsline {subsection}{\numberline {2.166}ENFABRICA CORPORATION:}{203}{subsection.2.166}%
+\contentsline {subsection}{\numberline {2.167}ENGINEERING WIRELESS SERVICES:}{204}{subsection.2.167}%
+\contentsline {subsection}{\numberline {2.168}ENPHASE ENERGY:}{205}{subsection.2.168}%
+\contentsline {subsection}{\numberline {2.169}ENTERGY SERVICES:}{206}{subsection.2.169}%
+\contentsline {subsection}{\numberline {2.170}EPITEC:}{207}{subsection.2.170}%
+\contentsline {subsection}{\numberline {2.171}ERICSSON:}{208}{subsection.2.171}%
+\contentsline {subsection}{\numberline {2.172}ESG AUTOMOTIVE:}{209}{subsection.2.172}%
+\contentsline {subsection}{\numberline {2.173}EVS:}{210}{subsection.2.173}%
+\contentsline {subsection}{\numberline {2.174}EXIMIUS DESIGN:}{211}{subsection.2.174}%
+\contentsline {subsection}{\numberline {2.175}FAKOURI ELECTRICAL ENGINEERING:}{212}{subsection.2.175}%
+\contentsline {subsection}{\numberline {2.176}FARADAY \& FUTURE:}{213}{subsection.2.176}%
+\contentsline {subsection}{\numberline {2.177}FCA US:}{214}{subsection.2.177}%
+\contentsline {subsection}{\numberline {2.178}FERMI RESEARCH ALLIANCE:}{215}{subsection.2.178}%
+\contentsline {subsection}{\numberline {2.179}FII USA:}{216}{subsection.2.179}%
+\contentsline {subsection}{\numberline {2.180}FIVES DYAG CORPORATION:}{217}{subsection.2.180}%
+\contentsline {subsection}{\numberline {2.181}FLEX LOGIX TECHNOLOGIES:}{218}{subsection.2.181}%
+\contentsline {subsection}{\numberline {2.182}FLEXTRONICS INTERNATIONAL USA:}{219}{subsection.2.182}%
+\contentsline {subsection}{\numberline {2.183}FLUENCE ENERGY:}{220}{subsection.2.183}%
+\contentsline {subsection}{\numberline {2.184}FORD MOTOR COMPANY:}{221}{subsection.2.184}%
+\contentsline {subsection}{\numberline {2.185}FORMFACTOR:}{222}{subsection.2.185}%
+\contentsline {subsection}{\numberline {2.186}FURTHER:}{223}{subsection.2.186}%
+\contentsline {subsection}{\numberline {2.187}FURTHER ENTERPRISE SOLUTIONS:}{224}{subsection.2.187}%
+\contentsline {subsection}{\numberline {2.188}GARMIN INTERNATIONAL:}{225}{subsection.2.188}%
+\contentsline {subsection}{\numberline {2.189}GCORP INTERNATIONAL:}{226}{subsection.2.189}%
+\contentsline {subsection}{\numberline {2.190}GENERAL ELECTRIC:}{227}{subsection.2.190}%
+\contentsline {subsection}{\numberline {2.191}GENERAL MOTORS COMPANY:}{228}{subsection.2.191}%
+\contentsline {subsection}{\numberline {2.192}GEORGIA INSTITUTE OF TECHNOLOGY:}{229}{subsection.2.192}%
+\contentsline {subsection}{\numberline {2.193}GLOBAL TECHNOLOGY ASSOCIATES:}{230}{subsection.2.193}%
+\contentsline {subsection}{\numberline {2.194}GLOBALFOUNDRIES US:}{231}{subsection.2.194}%
+\contentsline {subsection}{\numberline {2.195}GLOBALFOUNDRIES US 2:}{232}{subsection.2.195}%
+\contentsline {subsection}{\numberline {2.196}GLOW NETWORKS:}{233}{subsection.2.196}%
+\contentsline {subsection}{\numberline {2.197}GOODIX TECHNOLOGY:}{234}{subsection.2.197}%
+\contentsline {subsection}{\numberline {2.198}GOODMAN MANUFACTURING COMPANY LP:}{235}{subsection.2.198}%
+\contentsline {subsection}{\numberline {2.199}GOOGLE:}{236}{subsection.2.199}%
+\contentsline {subsection}{\numberline {2.200}GOPRO:}{237}{subsection.2.200}%
+\contentsline {subsection}{\numberline {2.201}GROQ:}{238}{subsection.2.201}%
+\contentsline {subsection}{\numberline {2.202}GSPANN TECHNOLOGIES:}{239}{subsection.2.202}%
+\contentsline {subsection}{\numberline {2.203}GTECH:}{240}{subsection.2.203}%
+\contentsline {subsection}{\numberline {2.204}GUAM ADVANCE ENTERPRISES:}{241}{subsection.2.204}%
+\contentsline {subsection}{\numberline {2.205}GULFSTREAM AEROSPACE CORPORATION:}{242}{subsection.2.205}%
+\contentsline {subsection}{\numberline {2.206}HALLIBURTON ENERGY SERVICES:}{243}{subsection.2.206}%
+\contentsline {subsection}{\numberline {2.207}HARMAN BECKER AUTOMOTIVE SYSTEMS:}{244}{subsection.2.207}%
+\contentsline {subsection}{\numberline {2.208}HATCH ASSOCIATES CONSULTANTS:}{245}{subsection.2.208}%
+\contentsline {subsection}{\numberline {2.209}HCL AMERICA:}{246}{subsection.2.209}%
+\contentsline {subsection}{\numberline {2.210}HDR ENGINEERING:}{247}{subsection.2.210}%
+\contentsline {subsection}{\numberline {2.211}HECATE ENERGY:}{248}{subsection.2.211}%
+\contentsline {subsection}{\numberline {2.212}HELLA ELECTRONICS CORPORATION:}{249}{subsection.2.212}%
+\contentsline {subsection}{\numberline {2.213}HERMES MICROVISION:}{250}{subsection.2.213}%
+\contentsline {subsection}{\numberline {2.214}HEXEL WORKS:}{251}{subsection.2.214}%
+\contentsline {subsection}{\numberline {2.215}HGST:}{252}{subsection.2.215}%
+\contentsline {subsection}{\numberline {2.216}HITACHI ENERGY USA:}{253}{subsection.2.216}%
+\contentsline {subsection}{\numberline {2.217}HITACHI RAIL STS USA:}{254}{subsection.2.217}%
+\contentsline {subsection}{\numberline {2.218}HL MANDO AMERICA CORPORATION:}{255}{subsection.2.218}%
+\contentsline {subsection}{\numberline {2.219}HONDA DEVELOPMENT \& MANUFACTURING OF AMERICA:}{256}{subsection.2.219}%
+\contentsline {subsection}{\numberline {2.220}HONEYWELL INTERNATIONAL:}{257}{subsection.2.220}%
+\contentsline {subsection}{\numberline {2.221}HORKUS SOLUTIONS:}{258}{subsection.2.221}%
+\contentsline {subsection}{\numberline {2.222}HP:}{259}{subsection.2.222}%
+\contentsline {subsection}{\numberline {2.223}HTN WIRELESS:}{260}{subsection.2.223}%
+\contentsline {subsection}{\numberline {2.224}HUF NORTH AMERICA AUTOMOTIVE PARTS MANUFACTURING CORP:}{261}{subsection.2.224}%
+\contentsline {subsection}{\numberline {2.225}HUGHES NETWORK SYSTEMS:}{262}{subsection.2.225}%
+\contentsline {subsection}{\numberline {2.226}HYPERLOOP TECHNOLOGIES:}{263}{subsection.2.226}%
+\contentsline {subsection}{\numberline {2.227}I MACHINES:}{264}{subsection.2.227}%
+\contentsline {subsection}{\numberline {2.228}I3 INFOTEK:}{265}{subsection.2.228}%
+\contentsline {subsection}{\numberline {2.229}IGNITARIUM:}{266}{subsection.2.229}%
+\contentsline {subsection}{\numberline {2.230}II{-}VI ORPORATED:}{267}{subsection.2.230}%
+\contentsline {subsection}{\numberline {2.231}INABIA SOFTWARE AND CONSULTING:}{268}{subsection.2.231}%
+\contentsline {subsection}{\numberline {2.232}INDEPTH ENGINEERING SOLUTIONS:}{269}{subsection.2.232}%
+\contentsline {subsection}{\numberline {2.233}INDUS USA:}{270}{subsection.2.233}%
+\contentsline {subsection}{\numberline {2.234}INFINEON TECHNOLOGIES:}{271}{subsection.2.234}%
+\contentsline {subsection}{\numberline {2.235}INFINERA CORPORATION:}{272}{subsection.2.235}%
+\contentsline {subsection}{\numberline {2.236}INFONERO:}{273}{subsection.2.236}%
+\contentsline {subsection}{\numberline {2.237}INNOPHASE:}{274}{subsection.2.237}%
+\contentsline {subsection}{\numberline {2.238}INPHI CORPORATION:}{275}{subsection.2.238}%
+\contentsline {subsection}{\numberline {2.239}INTEGER TELECOM SERVICES:}{276}{subsection.2.239}%
+\contentsline {subsection}{\numberline {2.240}INTEL:}{277}{subsection.2.240}%
+\contentsline {subsection}{\numberline {2.241}INTELLIGRATED SERVICES:}{278}{subsection.2.241}%
+\contentsline {subsection}{\numberline {2.242}INTELLIGRATED SYSTEMS:}{279}{subsection.2.242}%
+\contentsline {subsection}{\numberline {2.243}INTERDIGITAL COMMUNICATIONS:}{280}{subsection.2.243}%
+\contentsline {subsection}{\numberline {2.244}INTERNASH GLOBAL SERVICES:}{281}{subsection.2.244}%
+\contentsline {subsection}{\numberline {2.245}INTERNATIONAL BUSINESS MACHINES CORPORATION:}{282}{subsection.2.245}%
+\contentsline {subsection}{\numberline {2.246}INTERTEK TESTING SERVICES NA:}{283}{subsection.2.246}%
+\contentsline {subsection}{\numberline {2.247}INTUITIVE SURGICAL OPERATIONS:}{284}{subsection.2.247}%
+\contentsline {subsection}{\numberline {2.248}INVENCES:}{285}{subsection.2.248}%
+\contentsline {subsection}{\numberline {2.249}INVENSENSE:}{286}{subsection.2.249}%
+\contentsline {subsection}{\numberline {2.250}IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY:}{287}{subsection.2.250}%
+\contentsline {subsection}{\numberline {2.251}ITRON:}{288}{subsection.2.251}%
+\contentsline {subsection}{\numberline {2.252}JACOBS ENGINEERING GROUP:}{289}{subsection.2.252}%
+\contentsline {subsection}{\numberline {2.253}JMP SOLUTIONS:}{290}{subsection.2.253}%
+\contentsline {subsection}{\numberline {2.254}JOBY AERO:}{291}{subsection.2.254}%
+\contentsline {subsection}{\numberline {2.255}JOHN MEZZALINGUA ASSOCIATES:}{292}{subsection.2.255}%
+\contentsline {subsection}{\numberline {2.256}JOHNSON CONTROLS:}{293}{subsection.2.256}%
+\contentsline {subsection}{\numberline {2.257}JR AUTOMATION TECHNOLOGIES:}{294}{subsection.2.257}%
+\contentsline {subsection}{\numberline {2.258}JUNIPER NETWORKS:}{295}{subsection.2.258}%
+\contentsline {subsection}{\numberline {2.259}K\&A ENGINEERING CONSULTING PC:}{296}{subsection.2.259}%
+\contentsline {subsection}{\numberline {2.260}KARMA AUTOMOTIVE:}{297}{subsection.2.260}%
+\contentsline {subsection}{\numberline {2.261}KCM TECHNICAL:}{298}{subsection.2.261}%
+\contentsline {subsection}{\numberline {2.262}KEEP TRUCKIN:}{299}{subsection.2.262}%
+\contentsline {subsection}{\numberline {2.263}KEYSIGHT TECHNOLOGIES:}{300}{subsection.2.263}%
+\contentsline {subsection}{\numberline {2.264}KIEWIT ENGINEERING GROUP:}{301}{subsection.2.264}%
+\contentsline {subsection}{\numberline {2.265}KINDEN CORPORATION:}{302}{subsection.2.265}%
+\contentsline {subsection}{\numberline {2.266}KIOXIA AMERICA:}{303}{subsection.2.266}%
+\contentsline {subsection}{\numberline {2.267}KLA CORPORATION:}{304}{subsection.2.267}%
+\contentsline {subsection}{\numberline {2.268}KNOWLES ELECTRONICS:}{305}{subsection.2.268}%
+\contentsline {subsection}{\numberline {2.269}KOHLER COMPANY:}{306}{subsection.2.269}%
+\contentsline {subsection}{\numberline {2.270}KULICKE AND SOFFA INDUSTRIES:}{307}{subsection.2.270}%
+\contentsline {subsection}{\numberline {2.271}L\&T TECHNOLOGY SERVICES:}{308}{subsection.2.271}%
+\contentsline {subsection}{\numberline {2.272}LAM RESEARCH CORPORATION:}{309}{subsection.2.272}%
+\contentsline {subsection}{\numberline {2.273}LAMBDANETS:}{310}{subsection.2.273}%
+\contentsline {subsection}{\numberline {2.274}LANCESOFT:}{311}{subsection.2.274}%
+\contentsline {subsection}{\numberline {2.275}LATITUDE 36:}{312}{subsection.2.275}%
+\contentsline {subsection}{\numberline {2.276}LAWRENCE BERKELEY NATIONAL LABORATORY:}{313}{subsection.2.276}%
+\contentsline {subsection}{\numberline {2.277}LEAR CORPORATION:}{314}{subsection.2.277}%
+\contentsline {subsection}{\numberline {2.278}LEIDOS ENGINEERING:}{315}{subsection.2.278}%
+\contentsline {subsection}{\numberline {2.279}LER TECHFORCE:}{316}{subsection.2.279}%
+\contentsline {subsection}{\numberline {2.280}LHP ENGINEERING SOLUTIONS:}{317}{subsection.2.280}%
+\contentsline {subsection}{\numberline {2.281}LHP SOFTWARE:}{318}{subsection.2.281}%
+\contentsline {subsection}{\numberline {2.282}LIGHTFOOT TECHNOLOGIES:}{319}{subsection.2.282}%
+\contentsline {subsection}{\numberline {2.283}LITEPOINT CORPORATION:}{320}{subsection.2.283}%
+\contentsline {subsection}{\numberline {2.284}LORDSTOWN MOTORS CORP:}{321}{subsection.2.284}%
+\contentsline {subsection}{\numberline {2.285}LSI CORPORATION:}{322}{subsection.2.285}%
+\contentsline {subsection}{\numberline {2.286}LUCID USA:}{323}{subsection.2.286}%
+\contentsline {subsection}{\numberline {2.287}LUMENTUM OPERATIONS:}{324}{subsection.2.287}%
+\contentsline {subsection}{\numberline {2.288}LUTRON ELECTRONICS CO:}{325}{subsection.2.288}%
+\contentsline {subsection}{\numberline {2.289}MACOM TECHNOLOGY SOLUTIONS:}{326}{subsection.2.289}%
+\contentsline {subsection}{\numberline {2.290}MAGIC LEAP:}{327}{subsection.2.290}%
+\contentsline {subsection}{\numberline {2.291}MAGNA ELECTRONICS:}{328}{subsection.2.291}%
+\contentsline {subsection}{\numberline {2.292}MAGNA POWERTRAIN OF AMERICA:}{329}{subsection.2.292}%
+\contentsline {subsection}{\numberline {2.293}MANDO AMERICA CORPORATION:}{330}{subsection.2.293}%
+\contentsline {subsection}{\numberline {2.294}MANTRA TELECOM:}{331}{subsection.2.294}%
+\contentsline {subsection}{\numberline {2.295}MARELLI AUTOMOTIVE LIGHTING:}{332}{subsection.2.295}%
+\contentsline {subsection}{\numberline {2.296}MARELLI NORTH AMERICA:}{333}{subsection.2.296}%
+\contentsline {subsection}{\numberline {2.297}MARVELL SEMICONDUCTOR:}{334}{subsection.2.297}%
+\contentsline {subsection}{\numberline {2.298}MASSACHUSETTS INSTITUTE OF TECHNOLOGY:}{335}{subsection.2.298}%
+\contentsline {subsection}{\numberline {2.299}MASTEC SERVICES COMPANY:}{336}{subsection.2.299}%
+\contentsline {subsection}{\numberline {2.300}MATERIAL HANDLING SYSTEMS:}{337}{subsection.2.300}%
+\contentsline {subsection}{\numberline {2.301}MATTSON TECHNOLOGY:}{338}{subsection.2.301}%
+\contentsline {subsection}{\numberline {2.302}MAXIM INTEGRATED PRODUCTS:}{339}{subsection.2.302}%
+\contentsline {subsection}{\numberline {2.303}MAXLINEAR:}{340}{subsection.2.303}%
+\contentsline {subsection}{\numberline {2.304}MAYO CLINIC:}{341}{subsection.2.304}%
+\contentsline {subsection}{\numberline {2.305}MC DEAN:}{342}{subsection.2.305}%
+\contentsline {subsection}{\numberline {2.306}MEDIATEK USA:}{343}{subsection.2.306}%
+\contentsline {subsection}{\numberline {2.307}MEDTRONIC:}{344}{subsection.2.307}%
+\contentsline {subsection}{\numberline {2.308}MELLANOX TECHNOLOGIES:}{345}{subsection.2.308}%
+\contentsline {subsection}{\numberline {2.309}MENTOR GRAPHICS CORPORATION:}{346}{subsection.2.309}%
+\contentsline {subsection}{\numberline {2.310}MERCEDES{-}BENZ RESEARCH \& DEVELOPMENT NORTH AMERICA:}{347}{subsection.2.310}%
+\contentsline {subsection}{\numberline {2.311}MESA ASSOCIATES:}{348}{subsection.2.311}%
+\contentsline {subsection}{\numberline {2.312}META:}{349}{subsection.2.312}%
+\contentsline {subsection}{\numberline {2.313}META PLATFORMS:}{350}{subsection.2.313}%
+\contentsline {subsection}{\numberline {2.314}METHODICA TECHNOLOGIES:}{351}{subsection.2.314}%
+\contentsline {subsection}{\numberline {2.315}MICROCHIP TECHNOLOGY:}{352}{subsection.2.315}%
+\contentsline {subsection}{\numberline {2.316}MICRON SEMICONDUCTOR PRODUCTS:}{353}{subsection.2.316}%
+\contentsline {subsection}{\numberline {2.317}MICRON TECHNOLOGY:}{354}{subsection.2.317}%
+\contentsline {subsection}{\numberline {2.318}MICROSOFT CORPORATION:}{355}{subsection.2.318}%
+\contentsline {subsection}{\numberline {2.319}MIDCONTINENT INDEPENDENT SYSTEM OPERATOR:}{356}{subsection.2.319}%
+\contentsline {subsection}{\numberline {2.320}MILWAUKEE ELECTRIC TOOL CORPORATION:}{357}{subsection.2.320}%
+\contentsline {subsection}{\numberline {2.321}MIRAFRA:}{358}{subsection.2.321}%
+\contentsline {subsection}{\numberline {2.322}MITSUBISHI ELECTRIC POWER PRODUCTS:}{359}{subsection.2.322}%
+\contentsline {subsection}{\numberline {2.323}MOBILECOMM PROFESSIONALS:}{360}{subsection.2.323}%
+\contentsline {subsection}{\numberline {2.324}MOBIS NORTH AMERICA:}{361}{subsection.2.324}%
+\contentsline {subsection}{\numberline {2.325}MOBIVEIL:}{362}{subsection.2.325}%
+\contentsline {subsection}{\numberline {2.326}MOJO SOLUTIONS AND SERVICES MSS:}{363}{subsection.2.326}%
+\contentsline {subsection}{\numberline {2.327}MOLEX:}{364}{subsection.2.327}%
+\contentsline {subsection}{\numberline {2.328}MONOLITHIC POWER SYSTEMS:}{365}{subsection.2.328}%
+\contentsline {subsection}{\numberline {2.329}MOSCHIP TECHNOLOGIES USA:}{366}{subsection.2.329}%
+\contentsline {subsection}{\numberline {2.330}MOTIONAL AD:}{367}{subsection.2.330}%
+\contentsline {subsection}{\numberline {2.331}MOTOROLA:}{368}{subsection.2.331}%
+\contentsline {subsection}{\numberline {2.332}MOTT MACDONALD:}{369}{subsection.2.332}%
+\contentsline {subsection}{\numberline {2.333}NAVISTAR:}{370}{subsection.2.333}%
+\contentsline {subsection}{\numberline {2.334}NEW YORK INDEPENDENT SYSTEM OPERATOR:}{371}{subsection.2.334}%
+\contentsline {subsection}{\numberline {2.335}NEW YORK POWER AUTHORITY:}{372}{subsection.2.335}%
+\contentsline {subsection}{\numberline {2.336}NEXIUS SOLUTIONS:}{373}{subsection.2.336}%
+\contentsline {subsection}{\numberline {2.337}NEXTEER AUTOMOTIVE CORPORATION:}{374}{subsection.2.337}%
+\contentsline {subsection}{\numberline {2.338}NEXTGEN GLOBAL RESOURCES:}{375}{subsection.2.338}%
+\contentsline {subsection}{\numberline {2.339}NIDEC MOBILITY AMERICA CORPORATION:}{376}{subsection.2.339}%
+\contentsline {subsection}{\numberline {2.340}NIKOLA CORPORATION:}{377}{subsection.2.340}%
+\contentsline {subsection}{\numberline {2.341}NOKIA OF AMERICA CORPORATION:}{378}{subsection.2.341}%
+\contentsline {subsection}{\numberline {2.342}NORTH AMERICAN LIGHTING:}{379}{subsection.2.342}%
+\contentsline {subsection}{\numberline {2.343}NTESS:}{380}{subsection.2.343}%
+\contentsline {subsection}{\numberline {2.344}NURO:}{381}{subsection.2.344}%
+\contentsline {subsection}{\numberline {2.345}NUVIA:}{382}{subsection.2.345}%
+\contentsline {subsection}{\numberline {2.346}NVIDIA CORPORATION:}{383}{subsection.2.346}%
+\contentsline {subsection}{\numberline {2.347}NXP USA:}{384}{subsection.2.347}%
+\contentsline {subsection}{\numberline {2.348}OM TECHNOLOGIES:}{385}{subsection.2.348}%
+\contentsline {subsection}{\numberline {2.349}OMNIVISION TECHNOLOGIES:}{386}{subsection.2.349}%
+\contentsline {subsection}{\numberline {2.350}ON COMPUTER SERVICES:}{387}{subsection.2.350}%
+\contentsline {subsection}{\numberline {2.351}OPEN SYSTEMS INTERNATIONAL:}{388}{subsection.2.351}%
+\contentsline {subsection}{\numberline {2.352}OPERATION TECHNOLOGY:}{389}{subsection.2.352}%
+\contentsline {subsection}{\numberline {2.353}OPTIMAL:}{390}{subsection.2.353}%
+\contentsline {subsection}{\numberline {2.354}OPTIMAL CAE:}{391}{subsection.2.354}%
+\contentsline {subsection}{\numberline {2.355}ORCHESTRA TECHNOLOGY:}{392}{subsection.2.355}%
+\contentsline {subsection}{\numberline {2.356}P2S:}{393}{subsection.2.356}%
+\contentsline {subsection}{\numberline {2.357}PANASONIC CORPORATION OF NORTH AMERICA (PNA):}{394}{subsection.2.357}%
+\contentsline {subsection}{\numberline {2.358}PARSONS TRANSPORTATION GROUP:}{395}{subsection.2.358}%
+\contentsline {subsection}{\numberline {2.359}PENSANDO SYSTEMS:}{396}{subsection.2.359}%
+\contentsline {subsection}{\numberline {2.360}PENTANGLE TECH SERVICES:}{397}{subsection.2.360}%
+\contentsline {subsection}{\numberline {2.361}PERFECTVIPS:}{398}{subsection.2.361}%
+\contentsline {subsection}{\numberline {2.362}PI SQUARE TECHNOLOGIES:}{399}{subsection.2.362}%
+\contentsline {subsection}{\numberline {2.363}PLANTRONICS:}{400}{subsection.2.363}%
+\contentsline {subsection}{\numberline {2.364}POLARIS INDUSTRIES:}{401}{subsection.2.364}%
+\contentsline {subsection}{\numberline {2.365}POLYPHASE SYSTEM:}{402}{subsection.2.365}%
+\contentsline {subsection}{\numberline {2.366}POPULUS GROUP:}{403}{subsection.2.366}%
+\contentsline {subsection}{\numberline {2.367}POWER GRID ENGINEERING:}{404}{subsection.2.367}%
+\contentsline {subsection}{\numberline {2.368}POWER INTEGRATIONS:}{405}{subsection.2.368}%
+\contentsline {subsection}{\numberline {2.369}PRIMETALS TECHNOLOGIES USA:}{406}{subsection.2.369}%
+\contentsline {subsection}{\numberline {2.370}PROCTEK TEXAS:}{407}{subsection.2.370}%
+\contentsline {subsection}{\numberline {2.371}PSEMI CORPORATION:}{408}{subsection.2.371}%
+\contentsline {subsection}{\numberline {2.372}QORVO US:}{409}{subsection.2.372}%
+\contentsline {subsection}{\numberline {2.373}QUALCOMM:}{410}{subsection.2.373}%
+\contentsline {subsection}{\numberline {2.374}QUALITY DESIGN SERVICES:}{411}{subsection.2.374}%
+\contentsline {subsection}{\numberline {2.375}QUALUS:}{412}{subsection.2.375}%
+\contentsline {subsection}{\numberline {2.376}QUANTA TECHNOLOGY:}{413}{subsection.2.376}%
+\contentsline {subsection}{\numberline {2.377}RAMBUS:}{414}{subsection.2.377}%
+\contentsline {subsection}{\numberline {2.378}REGAL REXNORD CORPORATION:}{415}{subsection.2.378}%
+\contentsline {subsection}{\numberline {2.379}RENESAS ELECTRONICS:}{416}{subsection.2.379}%
+\contentsline {subsection}{\numberline {2.380}RGB SYSTEMS:}{417}{subsection.2.380}%
+\contentsline {subsection}{\numberline {2.381}RIVIAN:}{418}{subsection.2.381}%
+\contentsline {subsection}{\numberline {2.382}RIVOS:}{419}{subsection.2.382}%
+\contentsline {subsection}{\numberline {2.383}ROBERT BOSCH:}{420}{subsection.2.383}%
+\contentsline {subsection}{\numberline {2.384}ROCKLEY PHOTONICS:}{421}{subsection.2.384}%
+\contentsline {subsection}{\numberline {2.385}ROCKWELL AUTOMATION:}{422}{subsection.2.385}%
+\contentsline {subsection}{\numberline {2.386}ROCKWELL COLLINS:}{423}{subsection.2.386}%
+\contentsline {subsection}{\numberline {2.387}ROHDE \& SCHWARZ USA:}{424}{subsection.2.387}%
+\contentsline {subsection}{\numberline {2.388}ROLLS{-}ROYCE SOLUTIONS AMERICA:}{425}{subsection.2.388}%
+\contentsline {subsection}{\numberline {2.389}RWE RENEWABLES SERVICES:}{426}{subsection.2.389}%
+\contentsline {subsection}{\numberline {2.390}SAMBANOVA SYSTEMS:}{427}{subsection.2.390}%
+\contentsline {subsection}{\numberline {2.391}SAMSUNG:}{428}{subsection.2.391}%
+\contentsline {subsection}{\numberline {2.392}SANESO:}{429}{subsection.2.392}%
+\contentsline {subsection}{\numberline {2.393}SATYAM{-}VENTURE ENGINEERING SERVICES PVT LTD:}{430}{subsection.2.393}%
+\contentsline {subsection}{\numberline {2.394}SCALEFLUX:}{431}{subsection.2.394}%
+\contentsline {subsection}{\numberline {2.395}SCHLUMBERGER TECHNOLOGY CORPORATION:}{432}{subsection.2.395}%
+\contentsline {subsection}{\numberline {2.396}SCHNEIDER ELECTRIC:}{433}{subsection.2.396}%
+\contentsline {subsection}{\numberline {2.397}SCHWEITZER ENGINEERING LABORATORIES:}{434}{subsection.2.397}%
+\contentsline {subsection}{\numberline {2.398}SCIENTIFIC COMPONENTS CORP DBA MINI{-}CIRCUITS:}{435}{subsection.2.398}%
+\contentsline {subsection}{\numberline {2.399}SEAGATE US:}{436}{subsection.2.399}%
+\contentsline {subsection}{\numberline {2.400}SEL ENGINEERING SERVICES:}{437}{subsection.2.400}%
+\contentsline {subsection}{\numberline {2.401}SEMICONDUCTOR COMPONENTS INDUSTRIES:}{438}{subsection.2.401}%
+\contentsline {subsection}{\numberline {2.402}SEMTECH CORPORATION:}{439}{subsection.2.402}%
+\contentsline {subsection}{\numberline {2.403}SENSATA TECHNOLOGIES:}{440}{subsection.2.403}%
+\contentsline {subsection}{\numberline {2.404}SEQUANS COMMUNICATIONS:}{441}{subsection.2.404}%
+\contentsline {subsection}{\numberline {2.405}SHURE ORPORATED:}{442}{subsection.2.405}%
+\contentsline {subsection}{\numberline {2.406}SIEMENS:}{443}{subsection.2.406}%
+\contentsline {subsection}{\numberline {2.407}SILANNA SEMICONDUCTOR NORTH AMERICA:}{444}{subsection.2.407}%
+\contentsline {subsection}{\numberline {2.408}SILICON LABORATORIES:}{445}{subsection.2.408}%
+\contentsline {subsection}{\numberline {2.409}SITIME CORPORATION:}{446}{subsection.2.409}%
+\contentsline {subsection}{\numberline {2.410}SIVALTECH:}{447}{subsection.2.410}%
+\contentsline {subsection}{\numberline {2.411}SK HYNIX:}{448}{subsection.2.411}%
+\contentsline {subsection}{\numberline {2.412}SKYWORKS SOLUTIONS:}{449}{subsection.2.412}%
+\contentsline {subsection}{\numberline {2.413}SMITH \& NEPHEW:}{450}{subsection.2.413}%
+\contentsline {subsection}{\numberline {2.414}SONNEN:}{451}{subsection.2.414}%
+\contentsline {subsection}{\numberline {2.415}SPIRENT COMMUNICATIONS:}{452}{subsection.2.415}%
+\contentsline {subsection}{\numberline {2.416}SPRINT CORPORATION:}{453}{subsection.2.416}%
+\contentsline {subsection}{\numberline {2.417}ST JUDE MEDICAL CARDIOLOGY DIVISION:}{454}{subsection.2.417}%
+\contentsline {subsection}{\numberline {2.418}STANFORD UNIVERSITY/SLAC NATIONAL ACCELERATOR LABORATORY:}{455}{subsection.2.418}%
+\contentsline {subsection}{\numberline {2.419}STANLEY BLACK \& DECKER:}{456}{subsection.2.419}%
+\contentsline {subsection}{\numberline {2.420}STANTEC CONSULTING SERVICES:}{457}{subsection.2.420}%
+\contentsline {subsection}{\numberline {2.421}STARKEY LABORATORIES:}{458}{subsection.2.421}%
+\contentsline {subsection}{\numberline {2.422}STARTECH NETWORKS:}{459}{subsection.2.422}%
+\contentsline {subsection}{\numberline {2.423}STEM:}{460}{subsection.2.423}%
+\contentsline {subsection}{\numberline {2.424}STMICROELECTRONICS:}{461}{subsection.2.424}%
+\contentsline {subsection}{\numberline {2.425}STRYKER CORPORATION:}{462}{subsection.2.425}%
+\contentsline {subsection}{\numberline {2.426}SUNLUNE CORPORATION:}{463}{subsection.2.426}%
+\contentsline {subsection}{\numberline {2.427}SUPER MICRO COMPUTER:}{464}{subsection.2.427}%
+\contentsline {subsection}{\numberline {2.428}SUPERNAL:}{465}{subsection.2.428}%
+\contentsline {subsection}{\numberline {2.429}SVTRONICS:}{466}{subsection.2.429}%
+\contentsline {subsection}{\numberline {2.430}SYNAPSE DESIGN AUTOMATION:}{467}{subsection.2.430}%
+\contentsline {subsection}{\numberline {2.431}SYNAPTICS:}{468}{subsection.2.431}%
+\contentsline {subsection}{\numberline {2.432}SYNAPTICS ORPORATED:}{469}{subsection.2.432}%
+\contentsline {subsection}{\numberline {2.433}SYNOPSYS:}{470}{subsection.2.433}%
+\contentsline {subsection}{\numberline {2.434}SYSERCO:}{471}{subsection.2.434}%
+\contentsline {subsection}{\numberline {2.435}T{-}MOBILE USA:}{472}{subsection.2.435}%
+\contentsline {subsection}{\numberline {2.436}TAAL TECHNOLOGIES:}{473}{subsection.2.436}%
+\contentsline {subsection}{\numberline {2.437}TAE TECHNOLOGIES:}{474}{subsection.2.437}%
+\contentsline {subsection}{\numberline {2.438}TARANA WIRELESS:}{475}{subsection.2.438}%
+\contentsline {subsection}{\numberline {2.439}TATA TECHNOLOGIES:}{476}{subsection.2.439}%
+\contentsline {subsection}{\numberline {2.440}TE CONNECTIVITY CORPORATION:}{477}{subsection.2.440}%
+\contentsline {subsection}{\numberline {2.441}TEC GROUP:}{478}{subsection.2.441}%
+\contentsline {subsection}{\numberline {2.442}TECH MAHINDRA (AMERICAS):}{479}{subsection.2.442}%
+\contentsline {subsection}{\numberline {2.443}TECHNIP USA:}{480}{subsection.2.443}%
+\contentsline {subsection}{\numberline {2.444}TECHNOLOGY RESOURCE GROUP:}{481}{subsection.2.444}%
+\contentsline {subsection}{\numberline {2.445}TECTUS CORPORATION:}{482}{subsection.2.445}%
+\contentsline {subsection}{\numberline {2.446}TEKLABS:}{483}{subsection.2.446}%
+\contentsline {subsection}{\numberline {2.447}TELECOM TECHNOLOGY SERVICES:}{484}{subsection.2.447}%
+\contentsline {subsection}{\numberline {2.448}TELEDYNE LECROY:}{485}{subsection.2.448}%
+\contentsline {subsection}{\numberline {2.449}TELEWORLD SOLUTIONS:}{486}{subsection.2.449}%
+\contentsline {subsection}{\numberline {2.450}TELNET:}{487}{subsection.2.450}%
+\contentsline {subsection}{\numberline {2.451}TENSTORRENT USA:}{488}{subsection.2.451}%
+\contentsline {subsection}{\numberline {2.452}TERADYNE:}{489}{subsection.2.452}%
+\contentsline {subsection}{\numberline {2.453}TESLA:}{490}{subsection.2.453}%
+\contentsline {subsection}{\numberline {2.454}TESSOLVEDTS:}{491}{subsection.2.454}%
+\contentsline {subsection}{\numberline {2.455}TEXAS INSTRUMENTS ORPORATED:}{492}{subsection.2.455}%
+\contentsline {subsection}{\numberline {2.456}THE ALLIANCE FOR SUSTAINABLE ENERGY:}{493}{subsection.2.456}%
+\contentsline {subsection}{\numberline {2.457}THE CURATORS OF THE UNIVERSITY OF MISSOURI/MISSOURI UNIVERSITY OF SCIENCE AND TECHNOLOGY:}{494}{subsection.2.457}%
+\contentsline {subsection}{\numberline {2.458}THE FLORIDA STATE UNIVERSITY:}{495}{subsection.2.458}%
+\contentsline {subsection}{\numberline {2.459}THE LELAND STANFORD JR UNIVERSITY:}{496}{subsection.2.459}%
+\contentsline {subsection}{\numberline {2.460}THE TRUSTEES OF PRETON UNIVERSITY:}{497}{subsection.2.460}%
+\contentsline {subsection}{\numberline {2.461}THE UNIVERSITY OF SOUTHERN CALIFORNIA:}{498}{subsection.2.461}%
+\contentsline {subsection}{\numberline {2.462}THE UNIVERSITY OF TENNESSEE:}{499}{subsection.2.462}%
+\contentsline {subsection}{\numberline {2.463}THE UNIVERSITY OF VIRGINIA:}{500}{subsection.2.463}%
+\contentsline {subsection}{\numberline {2.464}TMEIC CORPORATION:}{501}{subsection.2.464}%
+\contentsline {subsection}{\numberline {2.465}TRACKONOMY SYSTEMS:}{502}{subsection.2.465}%
+\contentsline {subsection}{\numberline {2.466}TRANSPORTATION TECHNOLOGY CENTER:}{503}{subsection.2.466}%
+\contentsline {subsection}{\numberline {2.467}TRC ENGINEERS:}{504}{subsection.2.467}%
+\contentsline {subsection}{\numberline {2.468}TRINITY CONSULTANTS:}{505}{subsection.2.468}%
+\contentsline {subsection}{\numberline {2.469}TSMC ARIZONA CORPORATION:}{506}{subsection.2.469}%
+\contentsline {subsection}{\numberline {2.470}TSMC TECHNOLOGY:}{507}{subsection.2.470}%
+\contentsline {subsection}{\numberline {2.471}TUSIMPLE:}{508}{subsection.2.471}%
+\contentsline {subsection}{\numberline {2.472}UCHICAGO ARGONNE:}{509}{subsection.2.472}%
+\contentsline {subsection}{\numberline {2.473}UHNDER:}{510}{subsection.2.473}%
+\contentsline {subsection}{\numberline {2.474}UL:}{511}{subsection.2.474}%
+\contentsline {subsection}{\numberline {2.475}ULKASEMI:}{512}{subsection.2.475}%
+\contentsline {subsection}{\numberline {2.476}UMLAUT:}{513}{subsection.2.476}%
+\contentsline {subsection}{\numberline {2.477}UNIFIED BUSINESS TECHNOLOGIES:}{514}{subsection.2.477}%
+\contentsline {subsection}{\numberline {2.478}UNITED SORTATION SOLUTIONS:}{515}{subsection.2.478}%
+\contentsline {subsection}{\numberline {2.479}UNIVERSITY OF CALIFORNIA BERKELEY:}{516}{subsection.2.479}%
+\contentsline {subsection}{\numberline {2.480}UNIVERSITY OF COLORADO:}{517}{subsection.2.480}%
+\contentsline {subsection}{\numberline {2.481}UT{-}BATTELLE (OAK RIDGE NATIONAL LABORATORY):}{518}{subsection.2.481}%
+\contentsline {subsection}{\numberline {2.482}VALEO NORTH AMERICA:}{519}{subsection.2.482}%
+\contentsline {subsection}{\numberline {2.483}VANDERLANDE INDUSTRIES:}{520}{subsection.2.483}%
+\contentsline {subsection}{\numberline {2.484}VARIAN MEDICAL SYSTEMS:}{521}{subsection.2.484}%
+\contentsline {subsection}{\numberline {2.485}VEDANTA TELECOM:}{522}{subsection.2.485}%
+\contentsline {subsection}{\numberline {2.486}VELODYNE LIDAR:}{523}{subsection.2.486}%
+\contentsline {subsection}{\numberline {2.487}VEONEER US:}{524}{subsection.2.487}%
+\contentsline {subsection}{\numberline {2.488}VERVEBA TELECOM:}{525}{subsection.2.488}%
+\contentsline {subsection}{\numberline {2.489}VIBRANT SCIENCES:}{526}{subsection.2.489}%
+\contentsline {subsection}{\numberline {2.490}VICOR CORPORATION:}{527}{subsection.2.490}%
+\contentsline {subsection}{\numberline {2.491}VIEWRAY TECHNOLOGIES:}{528}{subsection.2.491}%
+\contentsline {subsection}{\numberline {2.492}VIRGINIA ELECTRIC AND POWER COMPANY:}{529}{subsection.2.492}%
+\contentsline {subsection}{\numberline {2.493}VIRGINIA POLYTECHNIC INSTITUTE \& STATE UNIVERSITY:}{530}{subsection.2.493}%
+\contentsline {subsection}{\numberline {2.494}VITESCO TECHNOLOGIES USA:}{531}{subsection.2.494}%
+\contentsline {subsection}{\numberline {2.495}VOLANSYS:}{532}{subsection.2.495}%
+\contentsline {subsection}{\numberline {2.496}VOLKSWAGEN GROUP OF AMERICA:}{533}{subsection.2.496}%
+\contentsline {subsection}{\numberline {2.497}VOLT MANAGEMENT CORP:}{534}{subsection.2.497}%
+\contentsline {subsection}{\numberline {2.498}WARTSILA NORTH AMERICA:}{535}{subsection.2.498}%
+\contentsline {subsection}{\numberline {2.499}WAYMO:}{536}{subsection.2.499}%
+\contentsline {subsection}{\numberline {2.500}WESTERN DIGITAL TECHNOLOGIES:}{537}{subsection.2.500}%
+\contentsline {subsection}{\numberline {2.501}WESTWOOD PROFESSIONAL SERVICES:}{538}{subsection.2.501}%
+\contentsline {subsection}{\numberline {2.502}WHIROOL CORPORATION:}{539}{subsection.2.502}%
+\contentsline {subsection}{\numberline {2.503}WIPRO LIMITED:}{540}{subsection.2.503}%
+\contentsline {subsection}{\numberline {2.504}WIPRO VLSI DESIGN SERVICES:}{541}{subsection.2.504}%
+\contentsline {subsection}{\numberline {2.505}WM RICE UNIVERSITY:}{542}{subsection.2.505}%
+\contentsline {subsection}{\numberline {2.506}WOLFSPEED:}{543}{subsection.2.506}%
+\contentsline {subsection}{\numberline {2.507}WOOD GROUP USA:}{544}{subsection.2.507}%
+\contentsline {subsection}{\numberline {2.508}WSP USA:}{545}{subsection.2.508}%
+\contentsline {subsection}{\numberline {2.509}WSP USA BUILDINGS:}{546}{subsection.2.509}%
+\contentsline {subsection}{\numberline {2.510}XCOM LABS:}{547}{subsection.2.510}%
+\contentsline {subsection}{\numberline {2.511}XDIN:}{548}{subsection.2.511}%
+\contentsline {subsection}{\numberline {2.512}XILINX:}{549}{subsection.2.512}%
+\contentsline {subsection}{\numberline {2.513}YOKOGAWA CORPORATION OF AMERICA:}{550}{subsection.2.513}%
+\contentsline {subsection}{\numberline {2.514}YUPANA:}{551}{subsection.2.514}%
+\contentsline {subsection}{\numberline {2.515}ZEBRA TECHNOLOGIES CORPORATION:}{552}{subsection.2.515}%
+\contentsline {subsection}{\numberline {2.516}ZEF SCIENTIFIC:}{553}{subsection.2.516}%
+\contentsline {subsection}{\numberline {2.517}ZEKU:}{554}{subsection.2.517}%
+\contentsline {subsection}{\numberline {2.518}ZENITH ELECTRONICS:}{555}{subsection.2.518}%
+\contentsline {subsection}{\numberline {2.519}ZEVA TECHNOLOGY:}{556}{subsection.2.519}%
+\contentsline {subsection}{\numberline {2.520}ZF:}{557}{subsection.2.520}%
+\contentsline {subsection}{\numberline {2.521}ZOOX:}{558}{subsection.2.521}%
